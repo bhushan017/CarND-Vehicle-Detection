@@ -90,7 +90,8 @@ Writeup / README
 
 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
-I trained a linear SVM using...
+   The code for this step is contained in the fifth code cell of the IPython notebook.
+   I trained a linear SVM using the HOG features and got an accuracy ~99%.
 
 ## Sliding Window Search
 
