@@ -38,12 +38,34 @@ You're reading it!
  I started by reading in all the `vehicle` and `non-vehicle` images.
  I then explored different color spaces and different `single_img_features` parameters (`orientations`, `pixels_per_cell`, and `cells_per_block`).  I grabbed random images from each of the two classes and displayed them to get a feel for what the `single_img_features` output looks like.
  Here is an example using different color space and HOG parameters of `orientations=9`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`:
- RGB color space ![alt text][image1]
- HSV color space ![alt text][image2]
- LUV color space ![alt text][image3]
- HLS color space ![alt text][image4]
- YUV color space ![alt text][image5]
- YCrCb color space ![alt text][image6]
+ 
+ 
+ RGB color space 
+ 
+ ![alt text][image1]
+ 
+ 
+ HSV color space 
+ 
+ ![alt text][image2]
+ 
+ 
+ LUV color space 
+ 
+ ![alt text][image3]
+ HLS color space 
+ 
+ ![alt text][image4]
+ 
+ 
+ YUV color space 
+ 
+ ![alt text][image5]
+ 
+ 
+ YCrCb color space 
+ 
+ ![alt text][image6]
 
 2. Explain how you settled on your final choice of HOG parameters.
 
