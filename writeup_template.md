@@ -10,13 +10,13 @@ The goals / steps of this project are the following:
 * Estimate a bounding box for vehicles detected.
 
 [//]: # (Image References)
-[image1]: ./examples/car_not_car.png
-[image2]: ./examples/HOG_example.jpg
-[image3]: ./examples/sliding_windows.jpg
-[image4]: ./examples/sliding_window.jpg
-[image5]: ./examples/bboxes_and_heat.png
-[image6]: ./examples/labels_map.png
-[image7]: ./examples/output_bboxes.png
+[image1]: ./output_images/hog-rgb.png
+[image2]: ./output_images/hog-hsv.png
+[image3]: ./output_images/hog-luv.png
+[image4]: ./output_images/hog-hls.png
+[image5]: ./output_images/hog-yuv.png
+[image6]: ./output_images/hog-YCrCb.png
+[image7]: ./output_images/hog-hls.png
 [video1]: ./project_video.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
@@ -33,18 +33,17 @@ You're reading it!
 
 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
 
-The code for this step is contained in the first code cell of the IPython notebook (or in lines # through # of the file called `some_file.py`).  
+ The code for this step is contained in the thrid code cell of the IPython notebook.  
 
-I started by reading in all the `vehicle` and `non-vehicle` images.  Here is an example of one of each of the `vehicle` and `non-vehicle` classes:
-
-![alt text][image1]
-
-I then explored different color spaces and different `skimage.hog()` parameters (`orientations`, `pixels_per_cell`, and `cells_per_block`).  I grabbed random images from each of the two classes and displayed them to get a feel for what the `skimage.hog()` output looks like.
-
-Here is an example using the `YCrCb` color space and HOG parameters of `orientations=8`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`:
-
-
-![alt text][image2]
+ I started by reading in all the `vehicle` and `non-vehicle` images.
+ I then explored different color spaces and different `single_img_features` parameters (`orientations`, `pixels_per_cell`, and `cells_per_block`).  I grabbed random images from each of the two classes and displayed them to get a feel for what the `single_img_features` output looks like.
+ Here is an example using different color space and HOG parameters of `orientations=9`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`:
+ RGB color space ![alt text][image1]
+ HSV color space ![alt text][image2]
+ LUV color space ![alt text][image3]
+ HLS color space ![alt text][image4]
+ YUV color space ![alt text][image5]
+ YCrCb color space ![alt text][image6]
 
 2. Explain how you settled on your final choice of HOG parameters.
 
