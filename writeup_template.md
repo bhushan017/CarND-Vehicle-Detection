@@ -16,7 +16,7 @@ The goals / steps of this project are the following:
 [image4]: ./output_images/hog-hls.png
 [image5]: ./output_images/hog-yuv.png
 [image6]: ./output_images/hog-YCrCb.png
-[image7]: ./output_images/hog-hls.png
+[image7]: ./output_images/example_car_found.png
 [video1]: ./project_video.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
@@ -96,22 +96,21 @@ Writeup / README
 ## Sliding Window Search
 
 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
-
-I decided to search random window positions at random scales all over the image and came up with this (ok just kidding I didn't actually ;):
-
-![alt text][image3]
+  
+     I am using the slide_window function which is that of the thrid code cell of the IPython notebook.
+     I am using the y_start_stop = [400,656] overlap = 0.5. 
 
 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
-Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
+    Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
 
-![alt text][image4]
+    ![alt text][image7]
 ---
 
 ### Video Implementation
 
 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
-Here's a [link to my video result](./project_video.mp4)
+Here's a [link to my video result](./project_output.mp4)
 
 
 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
