@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 [image7]: ./output_images/example_car_found.png
 [image8]: ./output_images/example_car_found_heatmap.png
 [image9]: ./output_images/example_car_found_heatmap_singleboundingbox.png
-[video1]: ./project_video.mp4
+[video1]: ./project_output.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
  
@@ -138,5 +138,11 @@ Writeup / README
 
 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.
+
+The output video for this project show that there is good detection of a car and a road. If the video was taken in a crowded place where there are lot of pedestrains, then this model would fail. To overcome this I need to train on much larger and generalized data set. 
+
+I can improve this project more by reducing all the false postives and also adverging the frame to detect the cars more consistiently. I will also try to combine this pipeline with the pipeline from a previous project that detects lanes.
+
+U-net seem to be fast and very accurate. I can use this model to detect vehicles.
 
